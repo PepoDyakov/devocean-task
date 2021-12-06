@@ -1,0 +1,62 @@
+@import '../../../styles/variables';
+
+.listWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(100% - 20rem);
+  margin: 5rem auto;
+  max-width: 100rem;
+}
+
+.listHeader {
+  width: 100%;
+  display: flex;
+  background-color: $white;
+  padding: $base-offset-sm $base-offset-sm;
+  margin-bottom: $base-offset-xxx-sm;
+}
+
+.headerText {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $purple;
+}
+
+.resourceWrapper {
+  display: flex;
+  width: 100%;
+  background-color: $white;
+  &:not(:last-child) {
+    margin-bottom: $base-offset-xxx-sm;
+  }
+  padding: $base-offset-sm $base-offset-sm;
+
+  &:hover {
+    background-color: $light-grey;
+  }
+
+  text-decoration: none;
+  color: $black;
+}
+
+.text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.leftColumn {
+  display: flex;
+  flex-shrink: 0;
+  width: 40%;
+  overflow: hidden;
+}
+
+.rightColumn {
+  display: flex;
+  flex-shrink: 0;
+  width: 60%;
+  overflow: hidden;
+}
